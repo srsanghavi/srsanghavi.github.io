@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="theme-color" content="#304ffe">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#304ffe">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>S R Sanghavi | Portfolio</title>
+
+    <link href="min/custom-min.css" type="text/css" rel="stylesheet" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js">   </script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+    <script type="text/javascript" src="https://raw.githubusercontent.com/rnmp/salvattore/master/dist/salvattore.min.js"></script>
+
+    <script type="text/javascript">
+
+        $(window).scroll(function(){
+            if ($(this).scrollTop()>0*$(window).height()) {
+              $("#index-banner").css("z-index","-2");
+            }
+            else{
+              $("#index-banner").css("z-index","200");
+            }
+            if($(this).scrollTop()>0.97*$(window).height()){
+               //console.log($(this).scrollTop())
+              $("#nav_f").css("position","fixed");
+              $("#nav_f").addClass("navbar-scrolled");
+
+            }
+            else{
+              $("#nav_f").removeClass("navbar-scrolled");
+              $("#nav_f").css("position","relative");
+
+            }
+          });
+        $(document).ready(function(){
+          $('.slider').slider({
+            full_width: false,
+            interval:5000,
+            transition:800,
+          });            // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+            $('.modal-trigger').leanModal({
+              dismissible: true, // Modal can be dismissed by clicking outside of the modal
+              opacity: .75, // Opacity of modal background
+              in_duration: 300, // Transition in duration
+              out_duration: 200, // Transition out duration
+                starting_top: '4%', // Starting top style attribute
+                      ending_top: '2vh', // Ending top style attribute
+
+              
+            });
+            $("#aboutMe").on('click',function(){
+                    $('html, body').animate({scrollTop : 0},800);
+                    return false;
+                });
+        // Add smooth scrolling to all links
+            $("#view_btn").on('click', function(event) {
+
+              // Make sure this.hash has a value before overriding default behavior
+              if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                  scrollTop: $(hash).offset().top
+                }, 800, function(){
+             
+                  // Add hash (#) to URL when done scrolling (default click behavior)
+                  // window.location.hash = hash;
+                });
+              } // End if
+            });
+          });
+        
+    </script>
+    
+</head>
+<body id="top" class="scrollspy" style="overflow-x: hidden;">
+
+<!-- Pre Loader -->
+<!-- <div id="loader-wrapper">
+    <div id="loader"></div>
+ 
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+ 
+</div> -->
+
+<!--Navigation-->
+ 
+
+<!--Hero-->
+<div class="section scrollspy" id="about-me" style="padding-top: 0px !important;">
+<div class="section no-pad-bot" id="index-banner" style="position: fixed;top:0;width: 100%;height:102vh;margin-top:-2.0vh;">
+        <div class="row" style="margin-bottom: 0px;">
+            <div class="container " style="width: 95%;;margin-top: 10vh">
+                <div class=" col s4 m4 l4 offset-s4" >    
+                    <img src="img/shashwat.jpg" class="circle responsive-img" style="margin-top: 13%" >
+                </div>
+            
+            <div class="col s12 m8 l8">
+                <h1 class="text_h header letters type left" style="font-size: 1.5em;padding-top: 35px;padding-bottom: 0px;">
+
+                    <div style="text-align: left;margin-top: -10px;"><b>Shashwat Sanghavi <br>
+                    B.Tech (Information and Communication Technology)</b>
+                    </div>
+                    <span style="text-align: justify;    text-justify: inter-word;">
+                        <p>Since my very childhood, the “whys?” behind the working of things have fascinated me! I have ended up breaking open and studying LED flashlights, remote controlled cars, FM radios since my childhood in order to understand how they work. My keen interest in electronics led me to take up my undergraduate course in the field of ICT at Ahmedabad University.</p>
+                        <p>During my early college life, computer programming and its applications used to attract me. As a result of this, I ended up  studying both Electronics and Computer Science in my course work. Few of the subjects that absolutely fascinate me are <b>machine learning, computer vision, embedded systems and user centered design</b>. My interest is being reflected in my projects and research work.</p>
+
+                    </span>
+                        
+                </h1>
+            </div>
+                
+            </div>
+            
+           
+
+    </div>
+    <div class="hide-on-small-only center" style="position: absolute;top: 90vh;width: 100vw;">
+       <a href="#nav_f" id="view_btn"class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">play_for_work</i></a>
+    </div>
+</div>
+</div>
+<div class="navbar" style="position: relative;margin-top: -20px">
+    <nav id="nav_f" class="default_color navbar" role="navigation" >
+        <div class="container" style="width:95%">
+            <div class="nav-wrapper ">
+             <a href="#" id="logo-container" class="brand-logo">SRSanghavi</a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="" id="abtMe">About Me</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#accomplishments">Accomplishments</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    
+                </ul>
+                <ul id="nav-mobile" class="side-nav">
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#accomplishments">Accomplishments</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+          <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+            </div>
+        </div>
+    </nav>
+    
+</div>
+
+
+<!--Work-->
+<div class="section scrollspy" id="work" style="margin-top: -15px;">
+    <div class="container">
+        <h2 class="header text_b">Work </h2>
+        <div id="card-container" class="row">
+            <div class="col s12 m4 l4 " style="background: none;">
+            <a class="waves-effect waves-light modal-trigger overflow-visible" href="#modal2" style="color: white;">
+
+                <div class="card hoverable sliding-u-l-r-l">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="img/project1.jpg" style="width:100%;height: 250px;">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4" style="font-size: 1.2em;line-height: 4px">Kahinee - An IVR system for rural health awareness <i class="mdi-navigation-more-vert right"></i></span>
+                    </div>
+                </div>
+                </a>
+                <div id="modal2" class="modal mymodal modal-fixed-footer" style="width:95vw;height:96vh !important;opacity: 0.9">
+                    <div class="modal-content container">
+                      <h4> 
+                      Kahinee - An IVR system for rural health awareness 
+                      </h4>
+                      <div class=" row">
+                        <div class="col s12 m12 l12">
+                             <div class="slider" style="height: 120%;">
+                                <ul class="slides">
+                                  <li>
+                                    <img src="projectdata/kahinee/1.jpg"> <!-- random image -->
+                                    <div class="caption center-align">
+                                      <h3>Kahinee helps rural audience over a simple telephone call.</h3>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <img src="projectdata/kahinee/2.jpg"> <!-- random image -->
+                                    <div class="caption left-align">
+                                      <h3>Kahinee is an outcome of following design thinking cycle strongly.</h3>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <img src="projectdata/kahinee/3.jpg"> <!-- random image -->
+                                    <div class="caption right-align">
+                                      <h3>Glimpse of field study</h3>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <img src="projectdata/kahinee/4.jpg"> <!-- random image -->
+                                    <div class="caption center-align">
+                                      <h3>Glimpse of field study</h3>
+                                    </div>
+                                  </li>
+                                   <li>
+                                    <img src="projectdata/kahinee/5.png"> <!-- random image -->
+                                    <div class="caption center-align">
+                                      <h3>Dashboard for NGOs.</h3>
+                                    </div>
+                                  </li>
+                                   <li>
+                                    <img src="projectdata/kahinee/6.jpg"> <!-- random image -->
+                                    <div class="caption center-align">
+                                      <h3>Kahinee received award for innovative teaching.</h3>
+                                    </div>
+                                  </li>
+
+                                </ul>
+                              </div>
+      
+                            
+                        </div>
+                        <div class="col s12 m12 l12">
+                          <p style="text-align: justify;">Kahinee is an IVR/VAS system intended to impart education and awareness in rural areas about maternal and child care, nutrition, anaemia and government health policies as well as facilities. We analyzed and discovered in our field visits to a number of villages that while there is an increasing awareness about different healthcare facilities and a desire to learn, there are few means of access to this information for the common rural area resident. Adding to that, illiteracy is still majorly prevalent because of which learning about health issues from the print medium is not a viable option.</p>
+                          <p style="text-align: justify;">We decided to provide a toll free number to rural residents using which they can learn as well as solve their queries pertaining to different health issues in their local language via audio notes and short audio plays. Kahinee aimed to impart healthcare education to ASHA workers, PHCs’ doctors (Primary Healthcare Centre), nurses and rural patients. ASHA workers are selected from the rural citizens and their goals are to help residents understand health issues as well as give them the medicines recommended by the doctors at the PHC. Our system used creatively designed audio plays and scripts to be able to train them about varied health issues.</p>
+                          <p style="text-align: justify;">The phase one implementation of this system consisted of educating and spreading awareness through short engaging audio plays and stories. The phase two of this system was to consist of a service using which people in rural areas can leave an audio note describing their symptoms in their local language. Kahinee will send these audio notes to urban doctors. The phase one pilot test has been successfully implemented in the Jhagdia district of Bharuch with Harvard based NGO - Barakat Bundle (www.barakatbundle.org), SEWA Rural and IIPH.</p>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat white-text default_color">Close</a>
+                  </div>
+                  </div>
+            </div>
+          
+
+            <div class="col s12 m4 l4">
+            <a class="waves-effect waves-light modal-trigger overflow-visible" href="#modal1" style="color: white;">
+                    <div class="card hoverable sliding-u-l-r-l">
+                        <div class="card-image card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="img/project2.jpeg" style="width:100%;height:250px;">
+                        </div>
+                        
+                        <div class="navbar-fixed card-content">
+                            <span class="card-title activator grey-text text-darken-4" style="font-size: 1.2em;line-height: 4px">CHECKit - A low cost mobile OMR system <i class="mdi-navigation-more-vert right"></i></span>
+                        </div>
+                    </div>
+                </a>
+                <div id="modal1" class="modal mymodal modal-fixed-footer" style="width:95vw;height:96vh !important;opacity: 0.9">
+                    <div class="modal-content container">
+                      <h4> 
+                      CHECKit - A low cost mobile OMR system
+                      </h4>
+                      <div class=" row">
+                        <div class="col s12 m12 l12">
+                            <iframe style="width: 100%;height: 300px" src="https://www.youtube.com/embed/pj_vycQeApk" frameborder="0" ></iframe>
+                        </div>
+                        <div class="col s12 m12 l12">
+                          <p style="text-align: justify;">Education Is Crucial For The Progress Of Developing Countries. On The Other Hand One Can Progress Only If One Is Aware Of His/her Errors. A Few Drawbacks We Found In The Current Exam Assessment System Are As Follows. 1) Continuous Evaluation Helps Students Progress Faster. Due To Lack Of The Manpower, Institutes Are Unable To Do So On Regular Basis. As A Result Students Suffer Heavily Due To Half Cooked Evaluation Schemes. 2) Omr Is Currently An Integral Part Of Many State Board Exams And Competitive Entrance Exams In India. The Schools And Coaching Classes Currently Use Omr Technology To Conduct Exams But Largely Omr Response Sheets Are Checked Manually. The Main Hurdles Are Prohibitive Cost Of The Omr Reader And Proprietary Software. 3) There Is A Definite Need For An Outcome Based Teaching Pedagogy At Schools And Colleges. However, Small Institutes Have Resource Limitations When It Comes To Quantifying The Teaching And Learning Processes. 4) Students Need A Quick Feedback On Their Exam Performance. This Means Timely Declaration Of The Results After Exams. This Will Help Students To Learn And Recover From Their Mistakes Very Quickly. But Due To Lack Of Manpower And Limited Finances It Is Not Always Feasible For An Institute To Deliver Results Accurately And Quickly. After Keeping These Guidelines In Mind We Have Devised Checkit. It Is A Mobile Phone Based Optical Mark Recognition (omr) System Which Is Used For Automatic Checking Of The Users’ Response Sheets. It Exploits Prior Information About The Omr Sheet Layout, Which Helps In Achieving High Speed And Accuracy. The System Incorporates Following Interdependent Modules: (i) Computer Vision And Image Processing; (ii) Computer Communication And Networking; (iii) Database And (iv)user Interface. The Desirability And Viability Aspects Of The System Development Are Done Based On Extensive Market Survey And After Interviewing Several Stake Holders.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
+                  </div>
+                  </div>
+            </div>
+
+          
+            <div class="col s12 m4 l4">
+            <a class="waves-effect waves-light modal-trigger overflow-visible" href="#modal3" style="color: white;">
+                <div class="card hoverable sliding-u-l-r-l">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <iframe class="aviator" style="width: 100%;height: 250px;"  
+                        src="https://www.youtube.com/embed/lY6zYZ5-Zd8?t=54">
+                        </iframe>  
+                                       
+                      </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4" style="font-size: 1.2em;line-height: 4px">High speed face detection in full HD video <i class="mdi-navigation-more-vert right"></i></span>
+                    </div>
+                </div>
+                </a>
+                <div id="modal3" class="modal" style="width:100%;height:100%;">
+                    <div class="modal-content">
+                      <h4>High speed face detection in full HD video </h4>
+                      <p>Face detection is a method to detect human faces from digital image. Many methods have been proposed to detect faces. However, the problem given to us was to develop an algorithm which can detect faces in 1080 Full HD video. Considering the heavy computation required to detect faces from each slide, we came up with an algorithm which can perform the task in much less computations.</p>
+                      <p>The proposed algorithm used a combination of two widely used algorithms in image processing. i.e. 1) viola & Jones for face detection and 2) CAMSHIFT for tracing he face. The algorithm used to detect a face in every 15th frame of the video. For other 15 frames, the detected face was tracked using CAMSHIFT. The flow chart in the diagram shows the used algorithm.</p>
+                      <p>This, algorithm was implemented with OpenCV with python over linux operating system. The algorithm provided a success with processing 46 frames per seconds.</p>
+                    </div>
+                     
+                  </div>
+            </div>
+            <div class="col s12 m4 l4">
+            <a class="waves-effect waves-light modal-trigger overflow-visible" href="#modal4" style="color: white;">
+                <div class="card hoverable  sliding-u-l-r-l">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="img/project4.jpg" style="width:100%;height: 250px;">
+                      </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4" style="font-size: 1.2em;line-height: 4px">Bluetooth controlled smart home switches/fan regulator <i class="mdi-navigation-more-vert right"></i></span>
+                    </div>
+                </div>
+                </a>
+                <div id="modal4" class="modal" style="width:100%;height:100%;">
+                    <div class="modal-content">
+                      <h4>Modal Header</h4>
+                      <p>A bunch of text</p>
+                    </div>
+                     
+                  </div>
+            </div>
+            <div class="col s12 m4 l4">
+                <div class="card sliding-u-l-r-l">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="img/project5.png" style="width:100%;height: 250px;">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4" style="font-size: 1.4em;line-height: 4px">Protein sequence predection using Machine Learning <i class="mdi-navigation-more-vert right"></i></span>
+                        <p><a href="#">Project link</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Project Title <i class="mdi-navigation-close right"></i></span>
+                        <p>Here is some more information about this project that is only revealed once clicked on.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4 l4">
+                <div class="card sliding-u-l-r-l">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="img/project6.jpeg" style="width:100%;height: 250px;">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4" style="font-size: 1.4em;line-height: 35px">Simulation of JPEG Image compression<i class="mdi-navigation-more-vert right"></i></span>
+                        <p><a href="#">Project link</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Project Title <i class="mdi-navigation-close right"></i></span>
+                        <p>Here is some more information about this project that is only revealed once clicked on.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m4 l4">
+                <div class="card sliding-u-l-r-l">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="img/project7.jpeg" style="width:100%;height: 250px;">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4" style="font-size: 1.4em;line-height: 35px">Spell suggestion aid/checker<i class="mdi-navigation-more-vert right"></i></span>
+                        <p><a href="#">Project link</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Project Title <i class="mdi-navigation-close right"></i></span>
+                        <p>Here is some more information about this project that is only revealed once clicked on.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m4 l4">
+                <div class="card sliding-u-l-r-l">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="img/project8.jpeg" style="width:100%;height: 250px;">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4" style="font-size: 1.4em;line-height: 25px">Designing E-learning game using concepts of UCD<i class="mdi-navigation-more-vert right"></i></span>
+                        <p><a href="#">Project link</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Project Title <i class="mdi-navigation-close right"></i></span>
+                        <p>Here is some more information about this project that is only revealed once clicked on.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m4 l4">
+                <div class="card sliding-u-l-r-l        ">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="img/project9.jpeg" style="width:100%;height: 250px;">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4" style="font-size: 1.4em;line-height: 40px">Designing Elderly health care system<i class="mdi-navigation-more-vert right"></i></span>
+                        <p><a href="#">Project link</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Project Title <i class="mdi-navigation-close right"></i></span>
+                        <p>Here is some more information about this project that is only revealed once clicked on.</p>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+    </div>
+</div>
+
+<!--Parallax-->
+<div class="parallax-container">
+    <div class="parallax"><img src="img/2.jpg"></div>
+</div>
+
+<!--Team-->
+<div class="section scrollspy" id="accomplishments">
+    <div class="container">
+        <h2 class="header text_b" style="font-size:35px"> Accomplishments </h2>
+        <div class="row card">
+             <div class="col s12 m4 l4" >
+                <img src="img/achi1.jpg" class="materialboxed col s12" >
+             </div>
+             <div class="col s12 m8 l8">
+                <h6><b>GYTI appretiation award for social innovation at Rashtrapati Bhawan</b></h6>
+                <p>The award was presented for the project Checkit.</p>
+             </div>
+        </div>
+
+        <div class="row card">
+             <div class="col s12 m4 l4" >
+                <img src="img/achi4.jpg" class="materialboxed col s12" >
+             </div>
+             <div class="col s12 m8 l8">
+                <h6><b>Appretiation by IEEE Gujarat Section for volunteering as Student branch chair</b></h6>
+                <p></p>
+             </div>
+             </div>
+
+        <div class="row card">
+             <div class="col s12 m4 l4" >
+                <img src="img/achi2.jpg" class="materialboxed col s12" >
+             </div>
+             <div class="col s12 m8 l8">
+                <h6><b>First prize in state level cometition for developing profitable app</b></h6>
+                <p>The award was presented by Computer Society of India,regional convention. The project presented was bluetooth controlled smart home home appliances.</p>
+             </div>
+             
+             </div>
+
+        <div class="row card">
+             <div class="col s12 m4 l4" >
+                <img src="img/achi3.png" class="materialboxed col s12" >
+             </div>
+             <div class="col s12 m8 l8">
+                <h6><b>Media coverage by one of the leading newspaper in the city for the project Kahinee</b></h6>
+                <p></p>
+             </div>
+             </div>
+
+        <div class="row card">
+             <div class="col s12 m4 l4" >
+                <img src="img/achi4.jpg" class="materialboxed col s12" >
+             </div>
+             <div class="col s12 m8 l8">
+                <h6><b>ITA award</b></h6>
+                <p>The award was presented for the project Kahinee and its innovative mentoring power.</p>
+             </div>
+             </div>
+        </div>
+
+    </div>
+</div>
+<div class="divider" ></div>
+
+<div  class="section scrollspy" id="publications">
+    <div class="container">
+        <h2 class="header text_b" style="font-size:35px;margin-top: 0px;"> Publications </h2>
+
+        <div class="row">
+            <a href="http://ieeexplore.ieee.org/document/7372983/"><p>1) <i>Patel, Rahul, Shashwat Sanghavi, Dhruv Gupta, and Mehul S. Raval. "CheckIt-A low cost mobile OMR system." In TENCON 2015-2015 IEEE Region 10 Conference, pp. 1-5. IEEE, 2015.</i></p></a>
+        </div>
+    </div>
+</div>
+<!--Footer-->
+<footer id="contact" class="page-footer default_color scrollspy" style="margin-top: -20px !important">
+    <div class="container">  
+        <div class="row">
+            <div class="col l6 s12">
+                <form class="col s12" action="contact.php" method="post">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <i class="mdi-action-account-circle prefix white-text"></i>
+                            <input id="icon_prefix" name="name" type="text" class="validate white-text">
+                            <label for="icon_prefix" class="white-text">First Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <i class="mdi-communication-email prefix white-text"></i>
+                            <input id="icon_email" name="email" type="email" class="validate white-text">
+                            <label for="icon_email" class="white-text">Email-id</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <i class="mdi-editor-mode-edit prefix white-text"></i>
+                            <textarea id="icon_prefix2" name="message" class="materialize-textarea white-text"></textarea>
+                            <label for="icon_prefix2" class="white-text">Message</label>
+                        </div>
+                        <div class="col offset-s7 s5">
+                            <button class="btn waves-effect waves-light red darken-1" type="submit">Submit
+                                <i class="mdi-content-send right white-text"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col l3 s12">
+                <h5 class="white-text">srsanghavi.com</h5>
+                <ul>
+                    <li><a class="white-text" target="blank" href="http://https://shashwatsanghavi.wordpress.com/">Blog</a></li>
+                </ul>
+            </div>
+            <div class="col l3 s12">
+                <h5 class="white-text">Social</h5>
+                <ul>
+                    
+                    <li>
+                        <a class="white-text" target="blank" href="https://www.facebook.com/shashwat.sanghavi">
+                            <i class="small fa fa-facebook-square white-text"></i> Facebook
+                        </a>
+                    </li>
+                    <li>
+                        <a class="white-text" target="blank" href="https://www.linkedin.com/in/shashwat-sanghavi-3165b889">
+                            <i class="small fa fa-linkedin-square white-text"></i> Linkedin
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright default_color">
+        <div class="container">
+            Made by <a class="white-text" href="">Shashwat Sanghavi</a>. 
+        </div>
+    </div>
+</footer>
+
+
+    <!--  Scripts-->
+    <!-- <script src="min/plugin-min.js"></script> -->
+    <script src="min/custom-min.js"></script>
+
+    </body>
+</html>
