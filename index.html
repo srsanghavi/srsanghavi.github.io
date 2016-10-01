@@ -20,25 +20,24 @@
 
     <script type="text/javascript">
 
-        $(window).scroll(function(){
-            if ($(this).scrollTop()>0*$(window).height()) {
-              $("#index-banner").css("z-index","-2");
-            }
-            else{
-              $("#index-banner").css("z-index","200");
-            }
-            if($(this).scrollTop()>0.97*$(window).height()){
-               //console.log($(this).scrollTop())
-              $("#nav_f").css("position","fixed");
-              $("#nav_f").addClass("navbar-scrolled");
+        // $(window).scroll(function(){
+        //     if ($(this).scrollTop()>0*$(window).height()) {
+        //       $("#index-banner").css("z-index","-2");
+        //     }
+        //     else{
+        //       $("#index-banner").css("z-index","200");
+        //     }
+        //     if($(this).scrollTop()>0.97*$(window).height()){
+        //       $("#nav_f").css("position","fixed");
+        //       $("#nav_f").addClass("navbar-scrolled");
 
-            }
-            else{
-              $("#nav_f").removeClass("navbar-scrolled");
-              $("#nav_f").css("position","relative");
+        //     }
+        //     else{
+        //       $("#nav_f").removeClass("navbar-scrolled");
+        //       $("#nav_f").css("position","relative");
 
-            }
-          });
+        //     }
+        //   });
         $(document).ready(function(){
           $('.slider').slider({
             full_width: false,
