@@ -26,7 +26,6 @@ i{font-size:1.5rem}.card-avatar .card-content .card-title{line-height:30px !impo
     width: 95% !important;
     max-height: 100% !important;
     background: rgb(255, 255, 255); /* Fallback for older browsers without RGBA-support */
-    background: rgba(255, 255, 255, 1) !important;
     
 }
 
