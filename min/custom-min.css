@@ -41,7 +41,7 @@ html{
 body{
     /*padding-top: 97vh;*/
     background-color: white;
-    overflow: visible;
+    overflow-x: hidden;
 }
 .navbar-scrolled{
   position: fixed;
