@@ -28,7 +28,9 @@ i{font-size:1.5rem}.card-avatar .card-content .card-title{line-height:30px !impo
     background: rgb(255, 255, 255); /* Fallback for older browsers without RGBA-support */
     
 }
-
+.sidenav-overlay{
+    z-index: 1 !important;
+}
 .modal-content{
     padding-right: 15% !important;
     padding-left: 15% !important;
