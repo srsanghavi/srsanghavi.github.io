@@ -15,7 +15,17 @@ p{margin:15px
 0px}.card-avatar .card-content
 i{font-size:1.5rem}.card-avatar .card-content .card-title{line-height:30px !important}.parallax-container{max-height:200px}footer.page-footer{margin-top:0px !important}
 
-
+.time-tag{
+        position: fixed;
+    left: 82%;
+    top: 1%;
+    height: 48px;
+    width: 45px;
+    background-color: #304ffe;
+    z-index: 2;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
 .caption{
     color: none !important;
     background-color: rgba(0, 0, 0,0.3) !important;
