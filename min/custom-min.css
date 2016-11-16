@@ -28,6 +28,7 @@ i{font-size:1.5rem}.card-avatar .card-content .card-title{line-height:30px !impo
     font-size: 12px;
     font-style: italic;
     padding: 3px;
+    color: white;
 }
 .caption{
     color: none !important;
