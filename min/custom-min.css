@@ -72,6 +72,7 @@ section{
 
 #card-container .card{
 	height: 370px;
+    width: 100%;
 }
 
 .sliding-u-l-r-l {
