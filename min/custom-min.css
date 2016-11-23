@@ -102,7 +102,7 @@ section{
 }
 .sliding-u-l-r-l:hover:before {
     width: 100%;
-    background: blue;
+    background: #0288d1;
     transition: width .5s ease;
 }
 .sliding-u-l-r-l:hover:after {
