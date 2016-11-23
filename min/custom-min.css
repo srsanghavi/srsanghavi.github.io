@@ -97,7 +97,7 @@ section{
     bottom: 0;
     height: 3px;
     width: 0;
-    background: blue;
+    background: #0288d1;
     transition: width .5s ease;
 }
 .sliding-u-l-r-l:hover:before {
