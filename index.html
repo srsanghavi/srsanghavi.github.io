@@ -20,7 +20,7 @@
 
     <script type="text/javascript">
 
-        $(window).scroll(function(){
+       /* $(window).scroll(function(){
             if ($(this).scrollTop()>0*$(window).height()) {
               // $("#index-banner").css("z-index","-2");
             }
@@ -38,7 +38,7 @@
               $("#nav_f").css("position","relative");
 
             }
-          });
+          });*/
         $(document).ready(function(){
           $('.slider').slider({
             full_width: false,
@@ -101,6 +101,32 @@
  
 
 <!--Hero-->
+<div class="navbar" style="position: relative;margin-top: 0px">
+    <nav id="nav_f" class="default_color navbar navbar-fixed" role="navigation" >
+        <div class="container" style="width:95%">
+            <div class="nav-wrapper ">
+             <a href="#" id="logo-container" class="brand-logo">S.R.Sanghavi</a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="" id="abtMe">About Me</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#accomplishments">Accomplishments</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    
+                </ul>
+                <ul id="nav-mobile" class="side-nav">
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#accomplishments">Accomplishments</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+          <a href="#" data-activates="nav-mobile" class="button-collapse" style="left: -5px; font-size: 3.5em"><i class="material-icons">menu</i></a>
+            </div>
+        </div>
+    </nav>
+    
+</div>
+
 <div class="section scrollspy" id="about-me" style="padding-top: 0px !important;">
 <div class="section no-pad-bot" id="index-banner" style="position: relative;width: 100%;min-height:102vh;margin-top:-2.0vh;">
         <div class="row" style="margin-bottom: 0px;">
@@ -134,31 +160,7 @@
     </div>
 </div>
 </div>
-<div class="navbar" style="position: relative;margin-top: -20px">
-    <nav id="nav_f" class="default_color navbar" role="navigation" >
-        <div class="container" style="width:95%">
-            <div class="nav-wrapper ">
-             <a href="#" id="logo-container" class="brand-logo">S.R.Sanghavi</a>
-                <ul class="right hide-on-med-and-down">
-                    <li><a href="" id="abtMe">About Me</a></li>
-                    <li><a href="#work">Work</a></li>
-                    <li><a href="#accomplishments">Accomplishments</a></li>
-                    <li><a href="#publications">Publications</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    
-                </ul>
-                <ul id="nav-mobile" class="side-nav">
-                    <li><a href="#work">Work</a></li>
-                    <li><a href="#accomplishments">Accomplishments</a></li>
-                    <li><a href="#publications">Publications</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-          <a href="#" data-activates="nav-mobile" class="button-collapse" style="left: -5px; font-size: 3.5em"><i class="material-icons">menu</i></a>
-            </div>
-        </div>
-    </nav>
-    
-</div>
+
 
 
 <!--Work-->
