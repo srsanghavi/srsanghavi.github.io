@@ -8,7 +8,7 @@
   <script>if (!window.jQuery) { document.write('<script src="js/jquery.min.js"><\/script>'); }</script>
   <script src="js/materialize.min.js">   </script>
   <script src="min/custom-min.js"></script>
-  <link href="min/custom-min.css" type="text/css" rel="stylesheet" >
+  <!-- <link href="min/custom-min.css" type="text/css" rel="stylesheet" > -->
   <link rel="stylesheet" href="css/materialize.min.css">
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
@@ -19,7 +19,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <title>Shashwat Sanghavi</title>
 
-  
+
    <!--  <script type="text/javascript" src="https://raw.githubusercontent.com/rnmp/salvattore/master/dist/salvattore.min.js"></script>
  -->
  <script type="text/javascript">
@@ -38,7 +38,7 @@
                 starting_top: '4%', // Starting top style attribute
                       ending_top: '2vh', // Ending top style attribute
 
-                      
+
                     });
     $("#aboutMe").on('click',function(){
       $('html, body').animate({scrollTop : 0},800);
@@ -60,18 +60,19 @@
                 $('html, body').animate({
                   scrollTop: $(hash).offset().top
                 }, 800, function(){
-                 
+
                   // Add hash (#) to URL when done scrolling (default click behavior)
                   // window.location.hash = hash;
                 });
               } // End if
             });
       });
-  
+
     </script>
 
     <style type="text/css">
       @font-face{font-family:'Material Icons';font-style:normal;font-weight:400;src:local('Material Icons'),local('MaterialIcons-Regular'),url(https://fonts.gstatic.com/s/materialicons/v21/2fcrYFNaTjcS6g4U3t-Y5ZjZjT5FdEJ140U2DJYC3mY.woff2) format('woff2')}.material-icons{font-family:'Material Icons';font-weight:400;font-style:normal;font-size:24px;line-height:1;letter-spacing:normal;text-transform:none;display:inline-block;white-space:nowrap;word-wrap:normal;direction:ltr;-webkit-font-feature-settings:'liga';-webkit-font-smoothing:antialiased}
+      .default_color{background-color:orange!important}.default_color_text{color:orange!important}.icon-block{padding:0 15px}#intro,#team,#work{padding-top:4rem}#index-banner{z-index:2;min-height:100vh;background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url(http://srsanghavi.com/img/index-banner.jpg);background-repeat:no-repeat}#nav_f{z-index:10;box-shadow:none!important;-webkit-box-shadow:none!important}.brand-logo,.text_h{color:#fff;font-weight:100}.text_h{font-size:6em;padding:15% 0}.brand-logo{position:absolute;display:inline-block;font-size:2.1rem;font-style:normal;padding:0;letter-spacing:7px}.text_h2{font-weight:100;margin-bottom:4%;line-height:4.5rem}.span_h2{font-weight:300}.card-content a,.card-content a:hover,.cd-headline.type .cd-words-wrapper.selected b,.span_h2,.text_b{color:orange}.in{font-weight:400!important;font-style:normal!important}.promo i,nav ul a{color:orange;font-size:7rem;display:block}#team,#work{background:#f7f7f7}.text_pink{color:#ef9a9a}nav ul a{font-size:1.2rem;color:#fff;letter-spacing:2px;font-weight:300;padding:0 15px}.cd-headline.type .cd-words-wrapper{vertical-align:top;overflow:hidden}.cd-headline.type .cd-words-wrapper::after{content:'';position:absolute;right:0;top:50%;bottom:auto;-webkit-transform:translateY(-50%);-moz-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%);height:90%;width:1px;background-color:#aebcb9}.cd-headline.type .cd-words-wrapper.waiting::after{-webkit-animation:cd-pulse 1s infinite;-moz-animation:cd-pulse 1s infinite;animation:cd-pulse 1s infinite}#preloader,.cd-headline.type .cd-words-wrapper.selected,body{background-color:#fff}.cd-headline.type .cd-words-wrapper.selected::after,.cd-headline.type b{visibility:hidden}.cd-headline.type b.is-visible{visibility:visible}.cd-headline.type i{position:absolute;visibility:hidden}.cd-headline.type i.in{position:relative;visibility:visible}@-webkit-keyframes cd-pulse{0%{-webkit-transform:translateY(-50%) scale(1);opacity:1}40%{-webkit-transform:translateY(-50%) scale(.9);opacity:0}to{-webkit-transform:translateY(-50%) scale(0);opacity:0}}@-moz-keyframes cd-pulse{0%{-moz-transform:translateY(-50%) scale(1);opacity:1}40%{-moz-transform:translateY(-50%) scale(.9);opacity:0}to{-moz-transform:translateY(-50%) scale(0);opacity:0}}@keyframes cd-pulse{0%{-webkit-transform:translateY(-50%) scale(1);-moz-transform:translateY(-50%) scale(1);-ms-transform:translateY(-50%) scale(1);-o-transform:translateY(-50%) scale(1);transform:translateY(-50%) scale(1);opacity:1}40%{-webkit-transform:translateY(-50%) scale(.9);-moz-transform:translateY(-50%) scale(.9);-ms-transform:translateY(-50%) scale(.9);-o-transform:translateY(-50%) scale(.9);transform:translateY(-50%) scale(.9);opacity:0}to{-webkit-transform:translateY(-50%) scale(0);-moz-transform:translateY(-50%) scale(0);-ms-transform:translateY(-50%) scale(0);-o-transform:translateY(-50%) scale(0);transform:translateY(-50%) scale(0);opacity:0}}#preloader{position:fixed;top:0;left:0;right:0;bottom:0;z-index:1200}#status{width:200px;height:200px;position:absolute;left:50%;top:50%;background-image:url(/img/status.gif);background-repeat:no-repeat;background-position:center;margin:-100px 0 0 -100px}@media only screen and (max-width:480px){.text_h{padding:4% 0;font-size:5em;font-weight:100;color:#fff}}input,textarea{border-bottom:1px solid #fff}nav a.button-collapse{left:-25px}.card-avatar .waves-effect{text-align:center;margin-top:20px}.card-avatar img{height:150px;width:150px;border-radius:75px}.card-avatar .card-content{text-align:center}.card .card-content p{margin:15px 0}.card-avatar .card-content i{font-size:1.5rem}.card-avatar .card-content .card-title{line-height:30px!important}.parallax-container{max-height:200px}footer.page-footer{margin-top:0!important}.time-tag{position:fixed;right:2%;top:0%;height:55px;width:50px;background-color:orange;z-index:2;border-bottom-left-radius:10px;border-bottom-right-radius:10px;font-size:12px;font-style:italic;padding:3px}.caption{color:none!important;background-color:rgba(0,0,0,.3)!important}.mymodal{height:100vh!important;width:95%!important;max-height:100%!important;background:#fff}#sidenav-overlay{z-index:1!important}.modal-content{padding-right:15%!important;padding-left:15%!important}html{font-family:GillSans,Calibri,Trebuchet,sans-serif}body{overflow-x:hidden}.navbar-scrolled{position:fixed;top:0;width:100%}.section,section{background-color:#fff;padding-top:3vh}#card-container .card{height:370px;width:100%}.sliding-u-l-r-l{display:inline-block;position:relative;padding-bottom:3px}.sliding-u-l-r-l:after,.sliding-u-l-r-l:before{content:'';display:block;position:absolute;bottom:0;height:3px;width:0}.sliding-u-l-r-l:before{left:0;transition:width 0s ease,background .5s ease}.sliding-u-l-r-l:after{right:0;background:orange;transition:width .5s ease}.sliding-u-l-r-l:hover:before{width:100%;background:orange;transition:width .5s ease}.sliding-u-l-r-l:hover:after{width:100%;background:0 0;transition:all 0s ease}.overflow-visible{overflow:visible!important}.hoverable:hover{transition:box-shadow .25s;box-shadow:10px 12px 15px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19)!important}#index-banner img{pointer-events:none}
     </style>
     
   </head>
@@ -86,7 +87,7 @@
   </div> -->
 
   <!--Navigation-->
-  
+
 
   <!--Hero-->
   <div class="navbar" style="margin-top: 10px;">
@@ -101,7 +102,7 @@
           <li><a href="http://srsanghavi.com/#publications">Publications</a></li>
           <li><a href="#contact">Contact</a></li>
           <li><a href="https://github.com/srsanghavi/srsanghavi.github.io/raw/master/ShashwatSanghaviResume.pdf" target="blank">Resume</a></li>
-          
+
         </ul>
         <ul id="nav-mobile" class="side-nav">
           <li><a href="http://srsanghavi.com/#introduction">About Me</a></li>
@@ -125,7 +126,7 @@
         <div class=" col s4 m4 l4 offset-s4" >    
           <img src="img/shashwat.jpg" class="circle responsive-img" style="margin-top: 13%" >
         </div>
-        
+
         <div class="col s12 m8 l8" style="margin-top: 8%">
           <h1 class="text_h header letters type left" style="font-size: 1.5em;padding-top: 15px;padding-bottom: 0px;">
 
@@ -137,12 +138,12 @@
               <p>With my knowledge in the field of ICT, I am inclined towards developing mHealth products, computer vision applications and assistive technologies.</p>
 
             </span>
-            
+
           </h1>
         </div>
-        
+
       </div>
-      
+
       <span id="introduction"></span>
     </div>
   </div>
@@ -158,7 +159,7 @@
       <p style="text-align: justify;">
         Briefly, I am a computer enthusiast, social activist and traveler who greatly believes that technology should be used for betterment of the society. I recently graduated from <a target="_blank" href="http://seas.ahduni.edu.in">School of Engineering and Applied Science</a>,<a target="_blank" href="http://ahduni.edu.in"> Ahmedabad University</a>. I have been a founding member and Chair person of student branch of IEEE at Ahmedabad University. Beside these, I am also a Co-founder of the start up – <a target="_blank" href="http://checkit.co.in">CHECKit</a>.
       </p>
-      
+
     </div>
 
     <div class="col s12 m8 l8 ">
@@ -190,7 +191,7 @@
               <div class="time-tag">Nov'14 - Present</div>
               <img class="activator" src="img/home_brand.png" style="width:auto;height:250px;margin-top: 15px;margin-left:auto;margin-right:auto;">
             </div>
-            
+
             <div class="navbar-fixed card-content">
               <span class="card-title activator grey-text text-darken-4" style="font-size: 1.2em;line-height: 4px">CHECKit - A low cost mobile OMR system <i class="mdi-navigation-more-vert right"></i></span>
             </div>
@@ -295,8 +296,8 @@
 
                                 </ul>
                               </div>
-                              
-                              
+
+
                             </div>
                             <div class="col s12 m12 l12">
                               <p style="text-align: justify;">Kahinee is an IVR/VAS system intended to impart education and awareness in rural areas about maternal and child care, nutrition, anaemia and government health policies as well as facilities. We analyzed and discovered in our field visits to a number of villages that while there is an increasing awareness about different healthcare facilities and a desire to learn, there are few means of access to this information for the common rural area resident. Adding to that, illiteracy is still majorly prevalent because of which learning about health issues from the print medium is not a viable option.</p>
@@ -304,7 +305,7 @@
                               <p style="text-align: justify;">The phase one implementation of this system consisted of educating and spreading awareness through short engaging audio plays and stories. The phase two of this system was to consist of a service using which people in rural areas can leave an audio note describing their symptoms in their local language. Kahinee will send these audio notes to urban doctors. The phase one pilot test has been successfully implemented in the Jhagdia district of Bharuch with Harvard based NGO - <a href="http://www.barakatbundle.org">Barakat Bundle</a>, <a href="http://sewarural.org/">SEWA Rural</a> and Indian Institute of Public Health.</p>
                               <p><b>Welcome message in local language:</b>
                                 <audio style="margin-top: 10px" controls><source src="http://srsanghavi.com/kahinee/audios/1.wav" type="audio/mpeg">"Your browser does not support the audio element."</audio></p>
-                                
+
                                 <p><b>Audio play in local language:</b>
                                   <audio style="margin-top: 10px" controls><source src="http://srsanghavi.com/kahinee/audios/2.wav" type="audio/mpeg">"Your browser does not support the audio element."</audio></p>
 
@@ -319,11 +320,11 @@
                             </div>
                           </div>
                         </div>
-                        
 
 
-                        
-                        
+
+
+
                         <div class="col s12 m4 l4">
                           <a class="waves-effect waves-light modal-trigger overflow-visible" href="#modal4" style="color: white;">
                             <div class="card hoverable  sliding-u-l-r-l">
@@ -361,7 +362,7 @@
                             <h5 style="text-align: right"><a href="http://srsanghavi.com/projects.html" style="color: orange">...More <i class="material-icons">keyboard_arrow_right</i>
                             </a></h5>
 
-                            
+
                           </div>
 
                         </div>
@@ -415,7 +416,7 @@
                     <h6><b>First prize in state level cometition for developing profitable app</b></h6>
                     <p>The award was presented by Computer Society of India,regional convention for the project bluetooth controlled smart home home appliances.</p>
                   </div>
-                  
+
                 </div>
 
                 <div class="row card">
@@ -511,6 +512,6 @@
 
       </script>
 
-      
+
     </body>
     </html>
