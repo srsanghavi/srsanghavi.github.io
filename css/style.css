@@ -17,9 +17,9 @@
 
 
 #index-banner {
-    height: 100vh;
+    /*height: 100vh;*/
     position: relative;
-    background-color: rgb(34,177,76);
+    /*background-color: rgb(34,177,76);*/
 }
 
 #nav_f{
