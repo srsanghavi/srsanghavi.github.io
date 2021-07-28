@@ -62,7 +62,7 @@ oOOOOOO OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO OOOOOOo
 		background: #fff;
 		box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
 		transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
-
+		min-height: 25rem;
 		cursor: pointer;
 	}
 
@@ -84,9 +84,11 @@ oOOOOOO OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO OOOOOOo
 	</div>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
 		<a class="navbar-brand js-scroll-trigger" href="#page-top">
-			<span class="d-block d-lg-none">Shashwat Sanghavi</span>
+			<span class="d-block d-lg-none">
+				Shashwat Sanghavi
+			</span>
 			<span class="d-none d-lg-block">
-				<img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/shashwat-profile.jpg" alt="">
+				<img class="img-fluid img-profile rounded-circle mx-auto mb-2 col-md-1" src="img/shashwat-profile.jpg" alt="">
 			</span>
 		</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -98,7 +100,7 @@ oOOOOOO OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO OOOOOOo
 					<a class="nav-link js-scroll-trigger" href="#about">About</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link js-scroll-trigger" href="#Project-links">Project links</a>
+					<a class="nav-link js-scroll-trigger" href="#Project-links">Selected Projects</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
@@ -132,13 +134,17 @@ oOOOOOO OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO OOOOOOo
 		<section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
 
 			<div class="my-auto">
+				
 				<h1 class="mb-0">Shashwat
 					<span class="text-primary">Sanghavi</span>
+				
 				</h1>
 				<div class="subheading mb-5">Boston · Massachussets ·
 					<a href="mailto:sanghavi.s@northeastern.edu">sanghavi.s@northeastern.edu</neu></a>
 				</div>
-				<p class="lead mb-5">Computer Science, Programming and Software Engineering is no less than an art.
+				
+				<p class="lead mb-5">Building softwares for Finance, TeleCom, Education and HealthCare...</p>
+				<!-- <p class="lead mb-5">Computer Science, Programming and Software Engineering is no less than an art.
 					<br><br>With keeping the concepts of user centered design in mind, I have built softwares and mobile applications in the field of 
 					Computer Vision, TeleCom, Social Media, Machine Learning and Assistive Technologies.
 					I love building products/softwares which help people in their daily life. 
@@ -148,7 +154,7 @@ oOOOOOO OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO OOOOOOo
 
 					<br><br> In free time, I love to travel, capture and draw.
 
-					<br><br> Shoot me an <a href="mailto:sanghavi.s@northeastern.edu">email</a> to discuss a career opportunity or just to say Hi 🙂.</p>
+					<br><br> Shoot me an <a href="mailto:sanghavi.s@northeastern.edu">email</a> to discuss a career opportunity or just to say Hi 🙂.</p> -->
 					<div class="social-icons">
 						<a href="https://www.linkedin.com/in/shashwatsanghavi/" data-toggle="tooltip" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
 						<a href="https://github.com/srsanghavi" data-toggle="tooltip" title="GitHub"><i class="fab fa-github"></i></a>
@@ -160,48 +166,55 @@ oOOOOOO OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO OOOOOOo
 			<section class="resume-section p-3 p-lg-5 d-flex d-column col-4" id="Project-Links">
 
 				<div class="my-auto">
-					<h2 class="mb-5">Selected Project Links</h2>
+					<h2 class="mb-5">Selected Projects</h2>
 					<div class="row container">
-						<a href="../checkit" target="_blank" class="card col" style="width: 18rem;">
-							<div class="p-3">
-								<img class="card-img-top" style="height:90%;width:90%" src="../checkit/images/home_brand.png" alt="Checkit hero">
-							</div>
-							<div class="card-body">
-							  <h5 class="card-title">CheckIt Go</h5>
-							  <p class="card-text">Quick. Efficient. Reliable grading.</p>
-							</div>
-						</a>
+						<div class="col-lg-3 col-sm-12 p-2">
+							<a href="../checkit" target="_blank" class="card " style="width:99%">
+								<div class="p-3">
+									<img class="card-img-top" style="height:90%;width:90%" src="../checkit/images/home_brand.png" alt="Checkit hero">
+								</div>
+								<div class="card-body">
+								<h5 class="card-title">CheckIt Go</h5>
+								<p class="card-text">Quick. Efficient. Reliable grading.</p>
+								</div>
+							</a>
+						</div>
 
-						<div class="m-1"></div>
-						<a href="../VisionEd" target="_blank"  class="card col" style="width: 18rem;">
-							<div class="p-1 mt-5">
-							<img class="card-img-top img-responsive"  src="http://srsanghavi.com/img/visionEd-1.png" alt="Kahinee hero">
-							</div>
-							<div class="card-body mt-5">
-								<h5 class="card-title">Vision Ed</h5>
-								<p class="card-text">rapid prototyping tool to develop computer vision applications</p>
-							</div>
-						</a>
-						<div class="m-1"></div>
-						<a href="../kahinee" target="_blank"  class="card col" style="width: 18rem;">
-							<div class="p-3 mt-3 mb-3">
-							<img class="card-img-top img-responsive"  src="img/kahinee-sqr.png" alt="Kahinee hero">
-							</div>
-							<div class="card-body">
-								<h5 class="card-title">Kahinee</h5>
-								<p class="card-text">A spirited story teller...</p>
-							</div>
-						</a>
-						<div class="m-1"></div>
-						<a href="https://github.com/srsanghavi/JPEG-simulation" target="_blank"  class="card col" style="width: 18rem;">
-							<div class="p-3 mt-3 mb-3">
-							<img class="card-img-top img-responsive"  src="img\project6.jpeg" alt="Kahinee hero">
-							</div>
-							<div class="card-body">
-								<h5 class="card-title">JPEG Simulation</h5>
-								<p class="card-text">This project implements the JPEG compression algorithm</p>
-							</div>
-						</a>
+						<div class="col-lg-3 col-sm-12 p-2">
+							<a href="../VisionEd" target="_blank"  class="card">
+								<div class="p-1 mt-5">
+								<img class="card-img-top img-responsive"  src="http://srsanghavi.com/img/visionEd-1.png" alt="Kahinee hero">
+								</div>
+								<div class="card-body mt-5">
+									<h5 class="card-title">Vision Ed</h5>
+									<p class="card-text">rapid prototyping tool to develop computer vision applications</p>
+								</div>
+							</a>
+						</div>
+
+						<div class="col-lg-3 col-sm-12 p-2">
+							<a href="../kahinee" target="_blank"  class="card">
+								<div class="p-3 mt-3 mb-3">
+								<img class="card-img-top img-responsive"  src="img/kahinee-sqr.png" alt="Kahinee hero">
+								</div>
+								<div class="card-body">
+									<h5 class="card-title">Kahinee</h5>
+									<p class="card-text">A spirited story teller...</p>
+								</div>
+							</a>
+						</div>
+
+						<div class="col-lg-3 col-sm-12 p-2">
+							<a href="https://github.com/srsanghavi/JPEG-simulation" target="_blank"  class="card">
+								<div class="p-3 mt-3 mb-3">
+								<img class="card-img-top img-responsive"  src="img\project6.jpeg" alt="Kahinee hero">
+								</div>
+								<div class="card-body">
+									<h5 class="card-title">JPEG Simulation</h5>
+									<p class="card-text">This project implements the JPEG compression algorithm</p>
+								</div>
+							</a>
+						</div>
 						
 				
 						
